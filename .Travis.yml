@@ -1,15 +1,19 @@
 language: python
-dist: xenial
+
 python:
   - 3.9
+
 env:
   global:
-    - PIPENV_VENV_IN_PROJECT=1
-    - PIPENV_IGNORE_VIRTUALENVS=1
+  - PIPENV_VENV_IN_PROJECT=1
+  - PIPENV_IGNORE_VIRTUALENV=1
+
 install:
   - pip install -q pipenv codecov
-  - pipenv sync --dev
+  - pipenv sync --d
+
 script:
   - pipenv run flake8 .
+
 after_success:
   - codecov
