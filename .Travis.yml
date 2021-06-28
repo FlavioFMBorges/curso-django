@@ -1,4 +1,4 @@
-language: python
+linguagem: python
 
 python:
   - 3.9
