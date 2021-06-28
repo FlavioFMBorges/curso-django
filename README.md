@@ -8,3 +8,4 @@ Código desenvolvido no módulo Django do curso www.python.pro.br
 [![Python 3](https://pyup.io/repos/github/FlavioFMBorges/curso-django/python-3-shield.svg)](https://pyup.io/repos/github/FlavioFMBorges/curso-django/)
 
 
+
