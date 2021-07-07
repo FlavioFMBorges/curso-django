@@ -31,9 +31,6 @@ jobs:
         pipenv sync --dev
         cp contrib/env-sample .env
 
-    before_script:
-      - psql -c "CREATE DATABASE testdb;" -U postgres
-
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
@@ -45,4 +42,3 @@ jobs:
     - name: Posting Coverage
       run: |
         pipenv run codecov
-
