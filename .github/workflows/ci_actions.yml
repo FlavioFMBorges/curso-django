@@ -34,7 +34,11 @@ jobs:
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
-    
+
+    - name: CDN with whitenoise
+      run: |
+        pip install whitenoise
+
     - name: Test with pytest
       run: |
         pipenv run pytest --cov=pypro
