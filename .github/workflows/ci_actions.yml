@@ -31,10 +31,14 @@ jobs:
         pipenv sync --dev
         cp contrib/env-sample .env
 
+    - name: CDN with whitenoise
+      run: |
+        pipenv install whitenoise
+
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
-    
+
     - name: Test with pytest
       run: |
         pipenv run pytest --cov=pypro
