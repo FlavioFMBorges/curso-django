@@ -127,15 +127,20 @@ USE_TZ = True
 
 # Configuração de ambiente de desenvolvimento
 
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'  # para upload de arquivos
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 COLLECTFAST_ENABLED = True
+
+COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
