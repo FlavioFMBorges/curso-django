@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from functools import partial
 from pathlib import Path
+import collectfast
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import dj_database_url
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'collectfast',
     'django.contrib.staticfiles',
     'pypro.base',
 ]
@@ -132,6 +134,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'  # para upload de arquivos
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
+
+COLLECTFAST_ENABLED = False
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
