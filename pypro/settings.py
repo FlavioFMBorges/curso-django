@@ -17,7 +17,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import dj_database_url
 from decouple import config, Csv
-from django.apps import AppConfig
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -148,5 +147,3 @@ COLLECTFAST_ENABLED = True
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
