@@ -134,7 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'  # para upload de arquivos
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
