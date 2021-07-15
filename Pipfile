@@ -13,6 +13,7 @@ whitenoise = "*"
 # collectfast = "*"
 boto3 = "*"
 django-debug-toolbar = "*"
+sentry-sdk = "*"
 
 [dev-packages]
 flake8 = "*"
