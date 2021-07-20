@@ -1,6 +1,6 @@
 name: CI
 
-on: [push]  #,pull_request
+on: [pull_request]  #,push
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: postgres
+          POSTGRES_DB: testdb
         ports: ['5432:5432']
 
     steps:
@@ -30,10 +30,6 @@ jobs:
         pip install pipenv
         pipenv sync --dev
         cp contrib/env-sample .env
-
-    - name: CDN with whitenoise
-      run: |
-        pipenv install whitenoise
 
     - name: Lint with flake8
       run: |
