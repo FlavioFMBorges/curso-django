@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from functools import partial
 from pathlib import Path
+import collectfast
 # import sentry_sdk
 # from sentry_sdk.integrations.django import DjangoIntegration
 
