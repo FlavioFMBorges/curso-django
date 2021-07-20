@@ -9,11 +9,11 @@ gunicorn = "*"
 python-decouple = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
-whitenoise = "*"
 # collectfast = "*"
 boto3 = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
+django-s3-folder-storage = "*"
 
 [dev-packages]
 flake8 = "*"
