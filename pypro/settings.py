@@ -13,8 +13,8 @@ import os
 from functools import partial
 from pathlib import Path
 
-# import sentry_sdk
-# from sentry_sdk.integrations.django import DjangoIntegration
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import dj_database_url
@@ -181,8 +181,6 @@ if AWS_ACCESS_KEY_ID:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 
-'''
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SENTRY_DSN = config('SENTRY_DSN', default=None)
@@ -198,4 +196,3 @@ if SENTRY_DSN:
                     # django.contrib.auth) you may enable sending PII data.
                     send_default_pii=True
                     )
-'''
