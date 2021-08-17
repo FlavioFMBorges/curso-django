@@ -1,1 +1,10 @@
-# Empty CSS file for your own CSS
+.main-footer{
+    background-color: #9fd15c;
+    margin-top: 5px;
+    padding-top: 4px;
+}
+
+.rights{
+    background-color: #567629;
+    padding-bottom: 4px;
+}
