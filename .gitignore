@@ -129,6 +129,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-ls _ Guia Linux.pdf
-settings.py
-/staticfiles/
+#Django
+staticfiles
