@@ -31,11 +31,6 @@ jobs:
         pipenv sync --dev
         cp contrib/env-sample .env
 
-    - name: Install cors
-      run: |
-        python -m pip install django-cors-headers
-
-
     - name: Lint with flake8
       run: |
         pipenv run flake8 .

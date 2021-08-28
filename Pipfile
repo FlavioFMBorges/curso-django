@@ -20,7 +20,6 @@ flake8 = "*"
 pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
-django-cors-headers = "*"
 
 [requires]
 python_version = "3.9"
