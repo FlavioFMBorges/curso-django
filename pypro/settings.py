@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from functools import partial
 from pathlib import Path
-import corsheaders.middleware
+import corsheaders
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'collectfast',
     'corsheaders',
+    'collectfast',
     'django.contrib.staticfiles',
     'pypro.base',
 ]
@@ -54,11 +54,13 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
+    'django.middleware.common.CommonMiddleware'
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
+
 ]
 
 ROOT_URLCONF = 'pypro.urls'
