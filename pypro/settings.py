@@ -143,6 +143,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 COLLECTFAST_ENABLED = False
 
+# Configurando o Cors
+CORS_ALLOW_ALL_ORIGINS = True
+
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 
 # STORAGE CONFIGURATION IN S3 AWS
