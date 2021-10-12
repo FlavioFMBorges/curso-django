@@ -24,3 +24,4 @@ def test_conteudo_video(resp):
                           'picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" '
                           'title="AULA 01 - MOTIVA&amp;Ccedil;&amp;Atilde;O &amp;mdash; Curso de Python Gr&amp;aacute;tis.mp4"></iframe>'
                           '</div><script src="https://player.vimeo.com/api/player.js"></script>')
+
