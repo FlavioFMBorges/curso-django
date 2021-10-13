@@ -1,11 +1,11 @@
 from django.shortcuts import render
 
 videos = [
-    {'slug': 'motivacao', 'titulo':'Video Aperitivo: Motivação', 'vimeo_id': 600249135},
+    {'slug': 'motivacao', 'titulo': 'Video Aperitivo: Motivação', 'vimeo_id': 600249135},
     {'slug': 'instalacao-windows', 'titulo': 'Instalação Windows', 'vimeo_id': 251497688},
 ]
 
-videos_dct={dct['slug']: dct for dct in videos}
+videos_dct = {dct['slug']: dct for dct in videos}
 
 
 def indice(request):
