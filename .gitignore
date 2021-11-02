@@ -132,3 +132,7 @@ dmypy.json
 #Django
 staticfiles
 anotacoes.txt
+
+#postgres files for local development
+
+.pgdata
