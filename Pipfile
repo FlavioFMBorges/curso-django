@@ -14,6 +14,7 @@ django-debug-toolbar = "*"
 sentry-sdk = "*"
 django-s3-folder-storage = "*"
 boto3 = "*"
+psycopg2 = "*"
 
 [dev-packages]
 flake8 = "*"
