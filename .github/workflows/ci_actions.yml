@@ -13,9 +13,9 @@ jobs:
       postgres:
         image: postgres:11.5
         env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: testdb
+          POSTGRES_USER: pythonpro
+          POSTGRES_PASSWORD: pythonpro
+          POSTGRES_DB: cursodjango
         ports: ['5434:5432']
 
     steps:
