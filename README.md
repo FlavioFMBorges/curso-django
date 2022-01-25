@@ -3,6 +3,11 @@
 
 Código desenvolvido no módulo Django do curso www.python.pro.br
 
+Para instalar:
+        pip install pipenv
+        pipenv sync --dev
+
+
 Aplicação disponivel em https://pythonprofb1.herokuapp.com/
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/FlavioFMBorges/curso-django/CI?style=plastic)
