@@ -4,8 +4,8 @@
 Código desenvolvido no módulo Django do curso www.python.pro.br
 
 Para instalar:
-        pip install pipenv
-        pipenv sync --dev
+       - pip install pipenv
+       - pipenv sync --dev
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/FlavioFMBorges/curso-django/CI?style=plastic)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/FlavioFMBorges/curso-django/CI/main?style=plastic)
