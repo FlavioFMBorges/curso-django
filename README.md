@@ -7,9 +7,6 @@ Para instalar:
         pip install pipenv
         pipenv sync --dev
 
-
-Aplicação disponivel em https://pythonprofb1.herokuapp.com/
-
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/FlavioFMBorges/curso-django/CI?style=plastic)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/FlavioFMBorges/curso-django/CI/main?style=plastic)
 [![Updates](https://pyup.io/repos/github/FlavioFMBorges/curso-django/shield.svg)](https://pyup.io/repos/github/FlavioFMBorges/curso-django/)
